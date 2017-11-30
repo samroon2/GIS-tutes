@@ -1,0 +1,32 @@
+<head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+</head>
+
+<div id="mapid">
+
+	 <style>
+	 #mapid {
+	    position : relative;
+	    width : 100.0%;
+	    height: 100.0%;
+	    left: 0.0%;
+	    top: 0.0%;
+	    }
+	        
+	 </style>
+	<script>
+	 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+	 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+	                {
+	                    maxZoom: 18,
+	                    minZoom: 1,
+	                    continuousWorld: false,
+	                    noWrap: false,
+	                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+	                    detectRetina: false
+	                    }
+	                ).addTo(mymap);
+	</script>
+</div>
