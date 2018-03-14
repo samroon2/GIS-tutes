@@ -1,30 +1,31 @@
+<!DOCTYPE html>
 <head>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
-<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
-<meta name="HandheldFriendly" content="true"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+  <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <style>
+     #mapid {
+        position : fixed;
+        width : 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+            
+  </style>
+  <link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/perliedman-leaflet-control-geocoder/1.5.7/Control.Geocoder.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/perliedman-leaflet-control-geocoder/1.5.7/Control.Geocoder.js"></script>
+  <script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
 </head>
 
-<div id="mapid"></div>
+<body>
 
-	 <style>
-	 #mapid {
-	    position : relative;
-	    width : 100.0%;
-	    height: 100.0%;
-	    left: 0.0%;
-	    top: 0.0%;
-	    }
-	        
-	 </style>
-	<link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css" /> 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/perliedman-leaflet-control-geocoder/1.5.7/Control.Geocoder.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/perliedman-leaflet-control-geocoder/1.5.7/Control.Geocoder.js"></script>
-	<script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
+  <div id="mapid"></div>
 	<script>
 	var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
@@ -108,3 +109,4 @@
                 },
             };
 			</script>
+</body>            
