@@ -47,7 +47,7 @@
     }
     };
     L.geoJSON(GeoJSONFeatures).addTo(mymap).bindPopup(GeoJSONFeatures.properties.popupContent);
-    SeattleData = L.geoJSON.ajax("./layers/test3.geojson",{
+    SeattleData = L.geoJSON.ajax("./layers/tracts_wgs84.geojson",{
     onEachFeature: function (feature, layer) {
         var popupContent = [];
         // get layer properties
